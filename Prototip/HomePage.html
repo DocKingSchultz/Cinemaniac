@@ -1,16 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.center {
+  border: 3px solid green; 
+  margin: 0;
 
+ text-align: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  vertical-align: baseline;
+  height:500px;
+}
+.welcome{
+ letter-spacing: 1px;
+}
+
+.vertical-menu {
+ width:50%;
+  height: 300px;
+  overflow-y: auto;
+margin-left:25%;
+
+}
+
+.vertical-menu p {
+  
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+.win{
+ background-color: #00ff00;
+}
+.lose{
+ background-color: #ff0000;
+}
+.vertical-menu p:hover {
+  background-color: #ccc;
+}
+
+
+</style>
 </head>
 <link rel="stylesheet" type="text/css" href="Menistyle.css">
+
 <body>
-<p>Welcome!</p>
+<p class="welcome">Welcome!</p>
+<table width="100%" cellspacing="5">
+<tr>
+<td width="35%">
 <div class="telo">
 <div class="btn from-middle">Play</div>
-<div class="btn from-middle">Statistics</div>
-<div class="btn from-middle">Match history</div>
+<div class="btn from-middle" onclick="myFunction1()">Statistics</div>
+<div class="btn from-middle" onclick="myFunction2()">Match history</div>
 <div class="btn from-middle">Leaderboard</div>
 </div>
+</td>
+<td>
+<div id="demo1" class="center" valign="top" style="display:none">
+<p>Wins: 10 <br> <br> Losses: 0 <br><br>  Win Ratio: 100% <br><br> Average: 10p per Game</p>
+</div>
+<div id="demo2" class="center" style="display:none">
+<div  class="vertical-menu">
+  <p class="lose">Loss</p>
+  <p class="win">Win</p>
+  <p class="win">Win</p>
+  <p class="lose">Loss</p>
+  <p class="lose">Loss</p>
+  <p class="win">Win</p>
+  <p class="win">Win</p>
+  <p class="lose">Loss</p>
+  <p class="lose">Loss</p>
+  <p class="win">Win</p>
+  <p class="win">Win</p>
+  <p class="lose">Loss</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+
+<script>
+function myFunction1() {
+  document.getElementById('demo1').style.display = "block";	
+    document.getElementById('demo2').style.display = "none";
+}
+
+function myFunction2() {
+  document.getElementById('demo2').style.display = "block";	
+  document.getElementById('demo1').style.display = "none";
+}
+</script>
 </body>
 </html>
+
