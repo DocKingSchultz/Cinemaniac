@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+ height: 200px;
+  position: relative;
+  border: 3px solid green; 
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+ text-align: center;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<div class="center">
+  <form action="/action_page.php">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username..">
+
+    <label for="Password">Password</label>
+    <input  type="text" id="Password" name="Password" placeholder="Enter your password..">
+  </form>
+	<a href="Register.html" class="button">Sign In</a>
+	<a href="#" class="button">Submit</a>
+</div>
+</body>
+</html>
