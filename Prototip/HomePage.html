@@ -3,16 +3,29 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.telo{
+	--def: #96B7C4; 	
+	--inv: #000;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+	height: 100vh;
+	
+}
+
+
 .center {
   border: 3px solid green; 
   margin: 0;
-
  text-align: center;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
   vertical-align: center;
   height:500px;
+ color:#000;
+ align-content: center;
 }
 
 .welcome{
@@ -48,30 +61,20 @@ margin-left:25%;
   background-color: #ccc;
  
 }
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top:10px;
-  margin-bottom:10px;
-  float:right;
- }
+
  #container {
-	width: 800px;
+	
 	height: auto;
 }
 
 .row {
 	position: relative;
-	display: block;
+	
 	width: 100%;
 	height: 2px;
 	border-bottom: 2px solid #AFAFAF;
+	margin-bottom:30px;
+	
 	
 }
 
@@ -94,22 +97,25 @@ margin-left:25%;
 	width: 10%;
 	margin:0;
 }
-
+.signout{
+float:right;
+margin-top:25px;
+}
 </style>
 </head>
-<link rel="stylesheet" type="text/css" href="Menistyle.css">
+<link rel="stylesheet" type="text/css" href="style3.css">
 
 <body>
 <p class="welcome">Welcome!</p>
-<a class="button" href="#">Sign Out</a>
-<table width="100%" cellspacing="5">
+<button class="fill signout" href="#">Sign Out</button>
+<table width="100%" height="100%" cellpadding="5">
 <tr>
 <td width="35%">
-<div class="telo">
-<div class="btn from-middle">Play</div>
-<div class="btn from-middle" onclick="myFunction1()">Statistics</div>
-<div class="btn from-middle" onclick="myFunction2()">Match history</div>
-<div class="btn from-middle" onclick ="myFunction3()">Leaderboard</div>
+<div  class="telo" >
+<button class=" fill">Play</button>
+<button class=" fill"onclick="myFunction1()">Statistics</button>
+<button class=" fill" onclick="myFunction2()">Match history</button>
+<button class=" fill" onclick ="myFunction3()">Leaderboard</button>
 </div>
 </td>
 <td>
@@ -118,7 +124,7 @@ margin-left:25%;
 </div>
 <div id="demo2" class="center" style="display:none">
 <div  class="vertical-menu">
-  <p class="lose">LOSS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Points: 10p</p>
+  <p class="lose">LOSS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    Points: 10p</p>
   <p class="win">WIN 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 14p</p>
   <p class="win">WIN 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 12p</p>
   <p class="lose">LOSS 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 44p</p>
@@ -136,7 +142,7 @@ margin-left:25%;
     <div class="row">
         <div class="spot">1.</div><div class="name">DrKingSchultz</div><div class="score">999</div>
     </div>
-    
+   
     <div class="row">
         <div class="spot">2.</div><div class="name">Anton Chigurh</div><div class="score">900</div>
     </div>
@@ -168,7 +174,7 @@ margin-left:25%;
         <div class="spot">9.</div><div class="name">M. Jones</div><div class="score">620</div>
     </div>
 	
-	
+
 	
 </div>
 </div>
@@ -196,6 +202,7 @@ function myFunction3() {
  
 }
 </script>
+
 </body>
 </html>
 
