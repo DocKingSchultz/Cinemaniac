@@ -3,34 +3,40 @@
 <head>
 <style>
 .center {
-  position: relative;
-  border: 3px solid green; 
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family:'Galindo';
+	width:400px;
+	border: 3px;
+	border-style: solid;
+	border-color:#A2F6A7;
+	background-color:#070707;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
+
 html{
-background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
+background-color:#070707;
 }
+
+
+
 </style>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
 <div class="center">
   <form action="/action_page.php">
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username" placeholder="Enter your username..">
+    
+	<label for="username"><font color=#A2F6A7 size=20px>Username</font></label><br>
+    <input type="text" id="username" name="username" placeholder="Enter your username.."><br>
 
-    <label for="Password">Password</label>
-    <input  type="text" id="Password" name="Password" placeholder="Enter your password..">
+    <label for="Password"><font color=#A2F6A7 size=20px>Password</font></label><br>
+    <input  type="text" id="Password" name="Password" placeholder="Enter your password.."><br>
   </form>
-	
-	<a href="HomePageRegularUser.html" class="button">Log in</a>
-	<a href="Register.html" class="button" >Sign Up</a>
+	<button class=" fill"  onclick="window.location.href = 'Register.html';">Sign in</button>
+	<button class=" fill" onclick="window.location.href = 'Register.html';">Submit</button>
 </div>
 </body>
 </html>

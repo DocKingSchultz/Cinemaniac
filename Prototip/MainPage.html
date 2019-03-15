@@ -3,7 +3,9 @@
 <head>
 <style>
 .center {
-  border: 3px solid green; 
+	border: 3px;
+	border-style: solid;
+	border-color:#A2F6A7;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -13,7 +15,7 @@
   font-family:'Galindo';
 }
 html{
-background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
+background-color:#070707;
 }
 </style>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -22,8 +24,8 @@ background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
 
 
 <div class="center">
-	<a href="LogIn.html" class="button">Play</a>
-	<a href="Guest.html" class="button" >Play as a Guest</a>
+	<button class="fill" onclick="window.location.href = 'LogIn.html';">PLAY</button>
+	<button class="fill" onclick="window.location.href = 'HomePage.html';">PLAY AS GUEST</button>
 	
 </div>
 

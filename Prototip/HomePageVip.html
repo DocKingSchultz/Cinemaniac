@@ -15,20 +15,19 @@
 	flex-direction: column;
 	height: 100vh;
 	font-size:16px;
-	position:relative;
 }
 
 
 .center {
   border: 3px solid #A2F6A7; 
-  margin: 0;
+  margin: 15%;
  text-align: center;
   border-radius: 5px;
   background-color: #070707;
   padding: 20px;
   vertical-align: center;
-  
-  height:600px;
+  width:700px;
+  height:550px;
  color:#000;
  align-content: center;
  font-size:16px;
@@ -43,7 +42,14 @@
 
 .vertical-menu {
 	width:70%;
-	height: 500px;
+	height: 100%;
+	overflow-y: auto;
+	margin-left:15%;
+
+}
+.vertical-menu1 {
+	width:70%;
+	height: 80%;
 	overflow-y: auto;
 	margin-left:15%;
 
@@ -57,7 +63,7 @@
 	text-decoration: none;
 	border:1px solid black;
 }
-.vertical-menu button {
+.vertical-menu1 button {
 	width:95%;
 	float:right;
 	background-color: #A2F6A7;
@@ -93,7 +99,7 @@
 	position: relative;
 	
 	width: 100%;
-	height: 23px;
+	height: 25px;
 	border: 2px solid #A2F6A7;
 	margin-bottom:30px;
 	
@@ -136,7 +142,7 @@ video {
 }
 input[type=text], select {
   width: 70%;
-  font-family:'Leftovers';
+  font-family:'Galindo';
   font-size: 20px;
   padding: 0px 0px;
   margin: 10px 0;
@@ -153,10 +159,10 @@ input[type=text], select {
 <body>
 <div>
 <p class="welcome">Welcome!</p>
-<button class="fill signout" onclick="window.location.href = 'MainPage.html';">Sign Out</button>
-<table width="100%" height="700px" cellpadding="5">
+<button class="signout" onclick="window.location.href = 'MainPage.html';">Sign Out</button>
+<table width="100%" height="100%" cellpadding="5">
 <tr>
-<td width="35%">
+<td width="30%">
 <div  class="telo" >
 <button class=" fill" onclick="window.location.href = 'game.html';">Play</button>
 <button class=" fill"onclick="myFunction1()">Statistics</button>
@@ -228,11 +234,11 @@ input[type=text], select {
 
 <div id="demo4" class="center"  valign="top" style="display:none" >
 	<form action="/action_page.php">
-    <label for="movie" style="color:white" >Search movie: </label>
+    <label for="movie" style="color:white" >Search movie: </label><br>
     <input type="text" id="movie" name="movie" placeholder="Enter movie for search..">
 	
   </form>
-	<div  class="vertical-menu">
+	<div  class="vertical-menu1">
 	<button class="button" onclick ="myFunction5()">Avengers Insert 1</button>	
 	<button class="button">LOSS    </button>
 	<button class="button">LOSS    </button>
@@ -260,7 +266,7 @@ input[type=text], select {
 		<font  color=#A2F6A7 >W.A:</font> <input type="text" name="LastName" placeholder="Enter your wrong answer"><br>
 	
 	</form>
-		<button class=" fill"  data-toggle="modal" data-target="#myModal" >Submit</button>
+		<button class=" submit"  data-toggle="modal" data-target="#myModal" >Submit</button>
 </div>
 
 </td>
