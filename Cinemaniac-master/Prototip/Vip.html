@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.telo{
+	--def: #A2F6A7; 	
+	--inv: #000;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+	height: 100vh;
+	
+}
+
+
+.center {
+  border: 3px solid #A2F6A7; 
+  margin: 15%;
+ text-align: center;
+  border-radius: 5px;
+  background-color: #070707;
+  padding: 20px;
+  vertical-align: center;
+  width:700px;
+  height:500px;
+ color:#000;
+ align-content: center;
+}
+
+.welcome{
+	letter-spacing: 1px;
+	font-size: 30px;
+	font-family:Galindo;
+	float:left;
+}
+
+.vertical-menu {
+	width:70%;
+	height: 500px;
+	overflow-y: auto;
+	margin-left:15%;
+
+}
+
+.vertical-menu p {
+  
+	color: black;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+	border:1px solid black;
+}
+.vertical-menu button {
+	width:95%;
+	float:right;
+	background-color: #A2F6A7;
+	color: black;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+   border:1px solid black;
+}
+.vertical-menu button:hover {
+  background-color: #F16464;
+ 
+}
+
+.win{
+ background-color: #A2F6A7;
+}
+.lose{
+ background-color: #F16464;
+}
+.vertical-menu p:hover {
+  background-color: #ccc;
+ 
+}
+
+ #container {
+	
+	height: auto;
+}
+
+.row {
+	color:#A2F6A7;
+	position: relative;
+	
+	width: 100%;
+	height: 23px;
+	border: 2px solid #A2F6A7;
+	margin-bottom:30px;
+	
+	
+}
+
+.name {
+	
+	position: relative;
+	display: inline-block;
+	width: 75%;
+	line-height: 30px;
+
+}
+
+.score {
+	position: relative;
+	display: inline-block;
+	width: 15%;
+}
+.spot {
+	position: relative;
+	display: inline-block;
+	width: 10%;
+	margin:0;
+}
+.signout{
+float:right;
+margin-top:25px;
+}
+
+video {
+	position:relative;
+	left:3%;
+	width:70%;
+	height:auto;
+	
+	
+}
+input[type=text], select {
+  width: 70%;
+  font-family:'Leftovers';
+  font-size: 20px;
+  padding: 0px 0px;
+  margin: 10px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+ 
+}
+
+
+</style>
+</head>
+<link rel="stylesheet" type="text/css" href="style3.css">
+
+<body>
+<p class="welcome">Welcome!</p>
+<button class="fill signout" onclick="window.location.href = 'MainPage.html';">Sign Out</button>
+<table width="100%" height="100%" cellpadding="5">
+<tr>
+<td width="30%">
+<div  class="telo" >
+<button class=" fill" onclick="window.location.href = 'game.html';">Play</button>
+<button class=" fill"onclick="myFunction1()">Statistics</button>
+<button class=" fill" onclick="myFunction2()">Match History</button>
+<button class=" fill" onclick ="myFunction3()">Leaderboard</button>
+<button class=" fill" onclick ="myFunction4()">Submit Question</button>
+</div>
+</td>
+<td>
+<div id="demo1" class="center"  valign="top" style="display:none" >
+<p><font color=#A2F6A7 size=20px>Wins: 10 <br> <br> Losses: 0 <br><br>  Win Ratio: 100% <br><br> Average: 10p per Game</font></p>
+</div>
+<div id="demo2" class="center" style="display:none">
+<div  class="vertical-menu">
+  <p class="lose">LOSS  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    Points: 10p</p>
+  <p class="win">WIN 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 14p</p>
+  <p class="win">WIN 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 12p</p>
+  <p class="lose">LOSS 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 44p</p>
+  <p class="lose">LOSS 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 10p</p>
+  <p class="win">WIN 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 10p</p>
+  <p class="win">WIN 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 10p</p>
+  <p class="lose">LOSS 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 10p</p>
+  <p class="lose">LOSS 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 10p</p>
+  <p class="win">WIN 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Points: 30p</p>
+  
+</div>
+</div>
+<div id="demo3" class="center" valign="top" style="display:none" >
+<div id="container">
+    <div class="row">
+        <div class="spot">1.</div><div class="name">DrKingSchultz</div><div class="score">999</div>
+    </div>
+   
+    <div class="row">
+        <div class="spot">2.</div><div class="name">Anton Chigurh</div><div class="score">900</div>
+    </div>
+    
+    <div class="row">
+        <div class="spot">3.</div><div class="name">Daniel Plainview</div><div class="score">840</div>
+    </div>
+    
+	<div class="row">
+        <div class="spot">4.</div><div class="name">Hannibal Lecter</div><div class="score">790</div>
+    </div>
+	
+	<div class="row">
+        <div class="spot">5.</div><div class="name">Col. Hans Landa</div><div class="score">720</div>
+    </div>
+    
+    <div class="row">
+        <div class="spot">6.</div><div class="name">Derek Vinyard</div><div class="score">715</div>
+    </div>
+	
+	<div class="row">
+        <div class="spot">7.</div><div class="name">Big Lebowski</div><div class="score">680</div>
+    </div>
+	
+	<div class="row">
+        <div class="spot">8.</div><div class="name">Leon</div><div class="score">650</div>
+    </div>
+	<div class="row">
+        <div class="spot">9.</div><div class="name">M. Jones</div><div class="score">620</div>
+    </div>
+	
+
+	
+</div>
+</div>
+
+<div id="demo4" class="center"  valign="top" style="display:none" >
+	<div  class="vertical-menu">
+	<button class="button" onclick ="myFunction5()">Avengers Insert 1</button>	
+	<button class="button">LOSS    </button>
+	<button class="button">LOSS    </button>
+	<button class="button">LOSS    </button>
+	<button class="button">LOSS    </button>
+	<button class="button">LOSS    </button>
+	<button class="button">LOSS    </button>
+	<button class="button">LOSS    </button>
+	<button class="button">LOSS    </button>
+	<button class="button">LOSS    </button>
+	</div>
+
+</div>
+
+<div id="demo5" class="center"  valign="top" style="display:none" >
+	<video autoplay controls>
+	<source src="Head.mp4" type="video/mp4">
+	<source src="Head.ogg" type="video/ogg"> 
+	</video><br>
+	<form action="/action_page.php">
+		<font  color=#A2F6A7 >&nbsp&nbsp&nbsp&nbspQ:</font> <input type="text" name="Question" value="Enter your question"><br>
+		<font  color=#A2F6A7 >C.A:</font> <input type="text" name="LastName" value="Enter your correct answer"><br>
+		<font  color=#A2F6A7 >W.A:</font> <input type="text" name="LastName" value="Enter your wrong answer"><br>
+		<font  color=#A2F6A7 >W.A:</font> <input type="text" name="LastName" value="Enter your wrong answer"><br>
+		<font  color=#A2F6A7 >W.A:</font> <input type="text" name="LastName" value="Enter your wrong answer"><br>
+		<button class=" spec" onclick ="myFunction4()">Submit</button>
+	</form>
+</div>
+
+</td>
+</tr>
+</table>
+
+<script>
+function myFunction1() {
+  document.getElementById('demo1').style.display = "block";	
+    document.getElementById('demo2').style.display = "none";
+	document.getElementById('demo3').style.display = "none";
+	document.getElementById('demo4').style.display = "none";
+	document.getElementById('demo5').style.display = "none";
+	  
+}
+
+function myFunction2() {
+  document.getElementById('demo2').style.display = "block";	
+  document.getElementById('demo1').style.display = "none";
+  document.getElementById('demo3').style.display = "none";
+  document.getElementById('demo4').style.display = "none";
+  document.getElementById('demo5').style.display = "none";
+ 
+}
+function myFunction3() {
+  document.getElementById('demo3').style.display = "block";
+  document.getElementById('demo1').style.display = "none";
+  document.getElementById('demo2').style.display = "none";
+  document.getElementById('demo4').style.display = "none";
+  document.getElementById('demo5').style.display = "none";
+
+ 
+}
+function myFunction4() {
+  document.getElementById('demo4').style.display = "block";
+  document.getElementById('demo1').style.display = "none";
+  document.getElementById('demo2').style.display = "none";
+  document.getElementById('demo3').style.display = "none";
+  document.getElementById('demo5').style.display = "none";
+
+}
+function myFunction5() {
+  document.getElementById('demo5').style.display = "block";
+  document.getElementById('demo1').style.display = "none";
+  document.getElementById('demo2').style.display = "none";
+  document.getElementById('demo3').style.display = "none";
+  document.getElementById('demo4').style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
+
