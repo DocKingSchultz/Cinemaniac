@@ -103,6 +103,7 @@
 .signout{
 float:right;
 margin-top:25px;
+size:30px;
 }
 </style>
 </head>
@@ -110,7 +111,7 @@ margin-top:25px;
 
 <body>
 <p class="welcome">Welcome!</p>
-<button class="fill signout " onclick="window.location.href = 'MainPage.html';">Sign Out</button>
+<button class="fill signout " onclick="window.location.href = 'MainPage.html';" style="width:250px;">Sign Out</button>
 <table width="100%" height="100%" cellpadding="5">
 	<tr>
 		<td width="30%">
@@ -132,18 +133,28 @@ margin-top:25px;
 						<tr onclick ="myFunction3()">
 						
 						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<td><button class="fill">Accept</button></td>
+						<td><button class="fill" style="color:#ff0000">Decline</button></td>
 						</tr>
 						<tr onclick ="myFunction3()">
 						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<td><button class="fill">Accept</button></td>
+						<td><button class="fill" style="color:#ff0000">Decline</button></td>
 						</tr>
 						<tr onclick ="myFunction3()">
 						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<td><button class="fill">Accept</button></td>
+						<td><button class="fill" style="color:#ff0000">Decline</button></td>
 						</tr>
 						<tr onclick ="myFunction3()" >
 						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<td><button class="fill">Accept</button></td>
+						<td><button class="fill" style="color:#ff0000" >Decline</button></td>
 						</tr>
 						<tr onclick ="myFunction3()">
 						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<td><button class="fill">Accept</button></td>
+						<td><button class="fill" style="color:#ff0000" >Decline</button></td>
 						</tr>
 					</table>	
 				</div>
@@ -152,8 +163,8 @@ margin-top:25px;
 							<source src="Head.mp4" type="video/mp4">
 							<source src="Head.ogg" type="video/ogg"> 
 						</video>
-						
-						<font  color=#A2F6A7 >&nbsp&nbsp&nbsp&nbspQ:</font> <label for="Question" value="Enter your question">Question</label><br>
+						<br>
+						<font  color=#A2F6A7 >Q:</font> <label for="Question" value="Enter your question">Question</label><br>
 							<font  color=#A2F6A7 >C.A:</font> <label for="CA" >A1</label><br>
 							<font  color=#A2F6A7 >W.A:</font> <label for="WA" >A2</label><br>
 							<font  color=#A2F6A7 >W.A:</font> <label  for="WA" >A3</label><br>
@@ -164,7 +175,7 @@ margin-top:25px;
 			<div id="demo2" class="center"  style="display:none">
 				
 				<div  class="vertical-menu">
-					<table align="center">
+					<table align="center" width=100%>
 						<tr style="background-color:#f2f2f2;" >
 							<th align="center" style="color:#000">Movie Name</th>
 							<th align="center" style="color:#000">Question</th>
@@ -173,28 +184,23 @@ margin-top:25px;
 						<tr onclick ="myFunction4()">
 						
 						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
-						<td><button class="fill" >Accept</button></td>
-						<td><button class="losefill" >Decline</button></td>
+						
 						</tr>
 						<tr onclick ="myFunction4()">
 						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
-						<td><button class="fill">Accept</button></td>
-						<td><button class="losefill" >Decline</button></td>
+						
 						</tr>
 						<tr onclick ="myFunction4()">
 						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
-						<td><button class="fill" >Accept</button></td>
-						<td><button class="losefill" >Decline</button></td>
+						
 						</tr>
 						<tr onclick ="myFunction4()" >
 						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
-						<td><button class="fill" >Accept</button></td>
-						<td><button class="losefill">Decline</button></td>
+						
 						</tr>
 						<tr onclick ="myFunction4()">
 						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
-						<td><button class="fill">Accept</button></td>
-						<td><button class="losefill" >Decline</button></td>
+						
 						</tr>
 					</table>
 					<div id="demo4"  style="display:none"  >
@@ -202,8 +208,9 @@ margin-top:25px;
 							<source src="Head.mp4" type="video/mp4">
 							<source src="Head.ogg" type="video/ogg"> 
 						</video>
-						<form action="/action_page.php">
 						<br>
+						<form action="/action_page.php">
+						
 							<font  color=#A2F6A7 >Q:</font> <input type="text" id="Password" name="Password "value="Question"><br>
 							<font  color=#A2F6A7 >C.A:</font> <input type="text" id="Password" name="Password" value="Answer1"><br>
 							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="Password" name="Password" value="Answer2"><br>
