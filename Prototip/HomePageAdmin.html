@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex, noarchive">
+<meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+
+
+input[type=text], select {
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+ 
+}
+
+.center {
+  border: 3px solid green; 
+font-size:16px;
+ text-align: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  vertical-align: center;
+  height:500px;
+ color:#000;
+ align-content: center;
+ 
+}
+
+.welcome{
+ letter-spacing: 1px;
+ font-size: 30px;
+ font-family:'Galindo';
+  float:left;
+}
+
+.vertical-menu {
+ 
+  height: 300px;
+  overflow-y: auto;
+	display:block;
+
+}
+
+.vertical-menu {
+  
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border:1px solid black;
+}
+
+.vertical-menu td{
+border-right:2px solid black;
+}
+.vertical-menu th{
+text-align:center;
+}
+.vertical-menu tr:hover {
+  background-color: #ccc;
+ 
+}
+
+
+ #container {
+	
+	height: auto;
+}
+
+
+
+.signout{
+float:right;
+margin-top:25px;
+font-size:16px;
+}
+</style>
+</head>
+<link rel="stylesheet" type="text/css" href="style3.css">
+
+<body>
+<table width="100%">
+<tr>
+<td>
+<p class="welcome">Welcome!</p>
+<button class="fill signout" href="#">Sign Out</button>
+</td>
+</tr>
+
+<tr>
+<td>
+<div id="demo1" class="center" >
+<form action="/action_page.php">
+    <label for="username" >Username</label>
+    <input type="text" id="username" name="username" placeholder="Enter username for search..">
+	
+  </form>
+	<button  class="fill" >Search</button>
+	<div  class="vertical-menu">
+  <table align="center">
+  <tr style="background-color:#f2f2f2;" >
+    <th align="center">Username</th>
+    <th align="center">Password</th>
+	<th align="center">Name</th>
+	<th align="center">Lastname</th>
+	<th align="center">Email</th>
+	<th align="center">IsModerator</th>
+  </tr>
+  <tr>
+  <td>
+  1Dr
+  </td>
+  <td>
+  Sif123
+  </td>
+  <td>
+  Aleksandar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca@gmail.com
+  </td>
+   <td>
+  true
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal">Promote</button>
+  </td>
+  <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal">Delete</button>
+  </td>
+  </tr>
+    <tr>
+  <td>
+  2DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal">Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal">Delete</button>
+  </td>
+  </tr>
+   <tr>
+  <td>
+  3DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+   <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal">Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+    <tr>
+  <td>
+  4DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+      <tr>
+  <td>
+  5DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+      <tr>
+  <td>
+  6DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+      <tr>
+  <td>
+ 7DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+      <tr>
+  <td>
+  8DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+      <tr>
+  <td>
+  9DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+
+   <tr>
+  <td>
+  10DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+      <tr>
+  <td>
+  11DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+      <tr>
+  <td>
+  12DrKingSchultz
+  </td>
+  <td>
+  Sifra123
+  </td>
+  <td>
+  Petar
+  </td>
+  <td>
+  Petrovic
+  </td>
+  <td>
+  peca.petrovic@gmail.com
+  </td>
+   <td>
+  false
+  </td>
+  <td>
+  <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
+  </td>
+   <td>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
+  </td>
+  </tr>
+  </table>
+
+  
+</div>
+</div>
+</td>
+</tr>
+</table>
+<div class="container">
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body" style="color:black" >
+          <p style="font-size:30px;">Are you sure?</p>
+        </div>
+        <div  style="align:center" >
+          <button type="button" class="fill " style="font-size:16px;"data-dismiss="modal">Yes</button>
+		  
+          <button type="button" class="losefill"  style="font-size:16px;" data-dismiss="modal">No</button>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+</body>
+</html>
+
