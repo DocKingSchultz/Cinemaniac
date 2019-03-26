@@ -1,0 +1,26 @@
+.centerReg {
+	border: 3px;
+	border-style: solid;
+	border-color:#A2F6A7;
+	background-color:#070707;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-color:#A2F6A7;
+	
+	font-size:30px;
+	color:#A2F6A7;
+}
+
+centerReg.label{
+display:block;
+}
+button{
+	font-size:30px;
+}
+html{
+background-color:#070707;
+}
