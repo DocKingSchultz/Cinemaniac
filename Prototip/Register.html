@@ -1,48 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.centerReg {
 
-	width:400px;
-	border: 3px;
-	border-style: solid;
-	border-color:#A2F6A7;
-	background-color:#070707;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	font-color:#A2F6A7;
-}
-html{
-background-color:#070707;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="centarReg.css">
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
-<div class="centerReg">
+<div class="centerReg" style="margin-top:5%;margin-bottom:5%;">
   <form action="/action_page.php">
-    <label for="name"><font color=#A2F6A7 size=10px>Name</font></label>
-    <input type="text" id="name" name="name" placeholder="Enter your first name..">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your first name.." >
 
-    <label for="lastname"><font color=#A2F6A7 size=10px>Lastname</font></label>
+    <label for="lastname">Lastname</label>
     <input  type="text" id="lastname" name="lastname" placeholder="Enter your last name..">
 	
-	<label for="username"><font color=#A2F6A7 size=10px>Username</font></label>
+	<label for="username">Username</label>
     <input type="text" id="username" name="username" placeholder="Enter your username..">
 
-    <label for="Password"><font color=#A2F6A7 size=10px>Password</font></label>
+    <label for="Password">Password</label>
     <input  type="text" id="Password" name="Password" placeholder="Enter your password..">
-	<label for="ConfirmPassword">Confirm Password</font></label>
+	<label for="ConfirmPassword">Confirm Password</label>
     <input  type="text" id="ConfirmPassword" name="ConfirmPassword" placeholder="Enter your password..">
-	<label for="Email"><font color=#A2F6A7 size=10px>Email</font></label>
+	<label for="Email">Email</label>
     <input  type="text" id="Email" name="Email" placeholder="Enter your Email..">
   </form>
-	<button class=" fill"  onclick="window.location.href = 'Register.html';">Submit</button>
+	<button class=" fill"  onclick="window.location.href = 'Register.html';" >Submit</button>
 </div>
 </body>
 </html>
