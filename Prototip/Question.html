@@ -2,6 +2,11 @@
 <html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+body{
+font-family:'Leftovers';
+ overflow:hidden;
+}
+
 .fa {
   font-size: 50px;
   cursor: pointer;
@@ -16,7 +21,7 @@
 }
 .question{
  letter-spacing: 1px;
- font-size: 100px;
+ font-size: 80px;
  font-family:'Leftovers';
  float:center;
   
@@ -27,15 +32,19 @@ margin:0 1% 1% 0;
 float:left;
 clear:none;
 width:48%;
-height:200px;
+height:100px;
 border:2px solid #808080;
-font-size:70px;
+font-size:60px;
 text-align:center;
+padding-top:50px;
+padding-bottom:50px;
+
 }
 a{
 text-decoration: none; 
 color:#fff;
 }
+
 </style>
 <head>
 <link rel="stylesheet" type="text/css" href="style3.css">
@@ -43,13 +52,17 @@ color:#fff;
 
 <div class="question">
 <p>What did Thanos say to Thor?</p>
+
 <a class="box" href="#">Subscribe to Pewdiepie!</a>
 <a class="box" href="#">You should have gone for the head.</a>
+
 <a class="box" href="#">Aaaaah that's hot, that's hot!</a>
 <a class="box" href="#">I did not hit her, I did naaawt!</a>
+
 </div>
-<i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size:90px">Like Question</i>
-<i onclick="myFunction(this)" class="fa fa-thumbs-down" style="font-size:90px">Dislike Question</i>
+<i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size:30px" style="float:left">Like Question</i>
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-down" style="font-size:30px" style="float:right">Dislike Question</i>
 
 </body>
 </html>
