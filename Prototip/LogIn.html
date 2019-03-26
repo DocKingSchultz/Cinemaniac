@@ -1,38 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.center {
-	width:400px;
-	border: 3px;
-	border-style: solid;
-	border-color:#A2F6A7;
-	background-color:#070707;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
 
-html{
-background-color:#070707;
-}
-
-
-
-</style>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="centarReg.css">
+<link rel="stylesheet" type="text/css" href="myStyle.css">
 </head>
 <body>
-<div class="center">
+<div class="centerReg">
   <form action="/action_page.php">
     
-	<label for="username"><font color=#A2F6A7 size=20px>Username</font></label><br>
+	<label for="username">Username</label><br>
     <input type="text" id="username" name="username" placeholder="Enter your username.."><br>
 
-    <label for="Password"><font color=#A2F6A7 size=20px>Password</font></label><br>
+    <label for="Password">Password</label><br>
     <input  type="text" id="Password" name="Password" placeholder="Enter your password.."><br>
   </form>
 	<button class=" fill"  onclick="window.location.href = 'Register.html';">Sign in</button>
