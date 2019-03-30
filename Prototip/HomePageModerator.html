@@ -2,120 +2,24 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.telo{
-	--def: #96B7C4; 	
-	--inv: #000;
-	display: flex;
-	justify-content: center;
-	align-items: left;
-	flex-direction: column;
-	height: 100vh;
-	
-}
-.welcome{
- letter-spacing: 1px;
- font-size: 30px;
- font-family:'Galindo';
-  float:left;
-}
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
 
-.center {
-  border: 3px solid #A2F6A7; 
-  margin: 0;
- text-align: center;
-  border-radius: 5px;
-  background-color: #070707;
-  padding: 20px;
-  vertical-align: center;
-
-
- color:#fff;
- align-content: center;
-}
-
-
-
-.vertical-menu {
- display: block;
-  height: 500px;
-  overflow-y: auto;
-
-
-}
-
-.vertical-menu p {
-  
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-   border:1px solid black;
-
-}
-.win{
- background-color: #A2F6A7;
-}
-.lose{
- background-color: #F16464;
-}
-.vertical-menu p:hover {
-  background-color: #ccc;
- 
-}
-
- #container {
-	
-	height: auto;
-}
-
-.row {
-	position: relative;
-	
-	width: 100%;
-	height: 2px;
-	border-bottom: 2px solid #AFAFAF;
-	margin-bottom:30px;
-	
-	
-}
-
-.name {
-	position: relative;
-	display: inline-block;
-	width: 30%;
-	line-height: 30px;
-	background-color: #A2F6A7;
-
-}
-
-.score {
-	position: relative;
-	display: inline-block;
-	width: 15%;
-}
-.spot {
-	position: relative;
-	display: inline-block;
-	width: 10%;
-	margin:0;
-}
-.signout{
-float:right;
-margin-top:25px;
-size:30px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="user.css">
 </head>
-<link rel="stylesheet" type="text/css" href="style3.css">
+
 
 <body>
+
 <p class="welcome">Welcome!</p>
 <button class="fill signout " onclick="window.location.href = 'MainPage.html';" style="width:250px;">Sign Out</button>
-<table width="100%" height="100%" cellpadding="5">
+
+<table width="100%" height="100%" cellpadding="5" >
 	<tr>
 		<td width="30%">
-			<div  class="telo" >
+			<div  class="telo">
 				<button class=" fill"onclick="myFunction1()">Question Request</button>
 				<button class=" fill" onclick="myFunction2()">Question Base</button>
 
@@ -123,45 +27,45 @@ size:30px;
 		</td>
 		<td>
 			<div id="demo1" class="center"  valign="top" style="display:none" >
-				<div  class="vertical-menu">
-					<table align="center" width=100%>
+				<div  class="vertical-menu"  >
+					<table align="center" width=100% >
 						<tr style="background-color:#f2f2f2;" >
-							<th align="center" style="color:#000">Movie Name</th>
-							<th align="center" style="color:#000">Question</th>
+							<th style="color:#000" >Movie Name</th>
+							<th style="color:#000" >Question</th>
 							
 						</tr>
-						<tr onclick ="myFunction3()">
+						<tr onclick ="myFunction3()" style="cursor: pointer;">
 						
-						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<td>Avengers</td><td>Solo Thanos</td>
 						<td><button class="fill">Accept</button></td>
-						<td><button class="fill" style="color:#ff0000">Decline</button></td>
+						<td><button class="losefill">Decline</button></td>
 						</tr>
-						<tr onclick ="myFunction3()">
-						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<tr onclick ="myFunction3()" style="cursor: pointer;">
+						<td>Avengers</td><td>Solo Thanos</td>
 						<td><button class="fill">Accept</button></td>
-						<td><button class="fill" style="color:#ff0000">Decline</button></td>
+						<td><button class="losefill">Decline</button></td>
 						</tr>
-						<tr onclick ="myFunction3()">
-						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<tr onclick ="myFunction3()" style="cursor: pointer;">
+						<td>Avengers</td><td>Solo Thanos</td>
 						<td><button class="fill">Accept</button></td>
-						<td><button class="fill" style="color:#ff0000">Decline</button></td>
+						<td><button class="losefill">Decline</button></td>
 						</tr>
-						<tr onclick ="myFunction3()" >
-						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<tr onclick ="myFunction3()" style="cursor: pointer;">
+						<td>Avengers</td><td>Solo Thanos</td>
 						<td><button class="fill">Accept</button></td>
-						<td><button class="fill" style="color:#ff0000" >Decline</button></td>
+						<td><button class="losefill" >Decline</button></td>
 						</tr>
-						<tr onclick ="myFunction3()">
-						<td>"Avemgers"</td><td>"Solo Thanos"</td>
+						<tr onclick ="myFunction3()" style="cursor: pointer;">
+						<td>Avengers</td><td>Solo Thanos</td>
 						<td><button class="fill">Accept</button></td>
-						<td><button class="fill" style="color:#ff0000" >Decline</button></td>
+						<td><button class="losefill" >Decline</button></td>
 						</tr>
 					</table>	
 				</div>
 				<div id="demo3"  style="display:none"  >
-						<video autoplay controls width="400" height="200" style="position:relative">
-							<source src="Head.mp4" type="video/mp4">
-							<source src="Head.ogg" type="video/ogg"> 
+						<video autoplay controls >
+							<source src="media/videos/Head.mp4" type="video/mp4">
+							<source src="media/videos/Head.ogg" type="video/ogg"> 
 						</video>
 						<br>
 						<font  color=#A2F6A7 >Q:</font> <label for="Question" value="Enter your question">Question</label><br>
@@ -174,58 +78,82 @@ size:30px;
 			
 			<div id="demo2" class="center"  style="display:none">
 				
-				<div  class="vertical-menu">
+				<div  class="vertical-menu" style="height:300px">
 					<table align="center" width=100%>
 						<tr style="background-color:#f2f2f2;" >
 							<th align="center" style="color:#000">Movie Name</th>
 							<th align="center" style="color:#000">Question</th>
 							<th align="center" style="color:#000">Like/Dislike</th>
 						</tr>
-						<tr onclick ="myFunction4()">
+						<tr onclick ="myFunction4()" style="cursor: pointer;">
 						
-						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
-						
-						</tr>
-						<tr onclick ="myFunction4()">
-						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
+						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
 						
 						</tr>
-						<tr onclick ="myFunction4()">
-						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
+						<tr onclick ="myFunction4()" style="cursor: pointer;">
+						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
 						
 						</tr>
-						<tr onclick ="myFunction4()" >
-						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
+						<tr onclick ="myFunction4()" style="cursor: pointer;">
+						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
 						
 						</tr>
-						<tr onclick ="myFunction4()">
-						<td>"Avemgers"</td><td>"Solo Thanos"</td><td>150/70</td>
+						<tr onclick ="myFunction4()" style="cursor: pointer;">
+						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
+						
+						</tr>
+						<tr onclick ="myFunction4()" style="cursor: pointer;">
+						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
 						
 						</tr>
 					</table>
-					<div id="demo4"  style="display:none"  >
-						<video autoplay controls width="400" height="200" style="position:relative">
-							<source src="Head.mp4" type="video/mp4">
-							<source src="Head.ogg" type="video/ogg"> 
+				</div>	
+					<div id="demo4"  style="display:none" >
+						<video autoplay controls  >
+							<source src="media/videos/Head.mp4" type="video/mp4">
+							<source src="media/videos/Head.ogg" type="video/ogg"> 
 						</video>
 						<br>
 						<form action="/action_page.php">
 						
-							<font  color=#A2F6A7 >Q:</font> <input type="text" id="Password" name="Password "value="Question"><br>
-							<font  color=#A2F6A7 >C.A:</font> <input type="text" id="Password" name="Password" value="Answer1"><br>
-							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="Password" name="Password" value="Answer2"><br>
-							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="Password" name="Password" value="Answer3"><br>
-							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="Password" name="Password" value="Answer4"><br>
+							<font  color=#A2F6A7 >Q:</font> <input type="text" id="Question" name="Question"value="Question"><br>
+							<font  color=#A2F6A7 >C.A:</font> <input type="text" id="CA" name="CA" value="Answer1"><br>
+							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="WA1" name="WA1" value="Answer2"><br>
+							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="WA2" name="WA2" value="Answer3"><br>
+							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="WA3" name="WA3" value="Answer4"><br>
 							
 						</form>
-							
-										
-			</div>
+						<button class="submit"  data-toggle="modal" data-target="#myModal" >Edit</button>	
+						<button class="submit"  data-toggle="modal" data-target="#myModal" >Delete</button>					
+					</div>
 
 		</td>
 	</tr>
+
 </table>
 
+<div class="container">
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body" style="color:black" >
+          <p style="font-size:30px;">Are you sure?</p>
+        </div>
+        <div  style="align:center" style="display:inline" >
+          <button type="button" class="fill " style="font-size:16px;"data-dismiss="modal" onclick ="myFunction4()">Yes</button>
+		  
+          <button type="button" class="losefill"  style="font-size:16px;" data-dismiss="modal" onclick ="myFunction4()">No</button>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 <script>
 function myFunction1() {
   document.getElementById('demo1').style.display = "block";	
