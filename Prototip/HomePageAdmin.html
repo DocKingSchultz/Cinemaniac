@@ -10,88 +10,12 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
 
+<link rel="stylesheet" type="text/css" href="user.css">
 
-input[type=text], select {
-  width: 350px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  text-align: center;
- 
-}
-
-.center {
-  border: 3px solid green; 
-font-size:16px;
- text-align: center;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  vertical-align: center;
-  height:500px;
- color:#000;
- align-content: center;
- 
-}
-
-.welcome{
- letter-spacing: 1px;
- font-size: 30px;
- font-family:'Galindo';
-  float:left;
-}
-
-.vertical-menu {
- 
-  height: 300px;
-  overflow-y: auto;
-	display:block;
-
-}
-
-.vertical-menu {
-  
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-  border:1px solid black;
-}
-
-.vertical-menu td{
-border-right:2px solid black;
-}
-.vertical-menu th{
-text-align:center;
-}
-.vertical-menu tr:hover {
-  background-color: #ccc;
- 
-}
-
-
- #container {
-	
-	height: auto;
-}
-
-
-
-.signout{
-float:right;
-margin-top:25px;
-font-size:16px;
-width:30px;
-display:inline-block;
-}
-</style>
 </head>
-<link rel="stylesheet" type="text/css" href="style3.css">
+
 
 <body>
 <table width="100%">
@@ -114,12 +38,12 @@ display:inline-block;
 	<div  class="vertical-menu">
   <table align="center">
   <tr style="background-color:#f2f2f2;" >
-    <th align="center">Username</th>
-    <th align="center">Password</th>
-	<th align="center">Name</th>
-	<th align="center">Lastname</th>
-	<th align="center">Email</th>
-	<th align="center">IsModerator</th>
+    <th align="center" style="color:black">Username</th>
+    <th align="center" style="color:black">Password</th>
+	<th align="center" style="color:black">Name</th>
+	<th align="center" style="color:black">Lastname</th>
+	<th align="center" style="color:black">Email</th>
+	<th align="center" style="color:black">IsModerator</th>
   </tr>
   <tr>
   <td>
@@ -144,7 +68,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal">Promote</button>
   </td>
   <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal">Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal">Delete</button>
   </td>
   </tr>
     <tr>
@@ -170,7 +94,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal">Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal">Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal">Delete</button>
   </td>
   </tr>
    <tr>
@@ -196,7 +120,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal">Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
     <tr>
@@ -222,7 +146,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
       <tr>
@@ -248,7 +172,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
       <tr>
@@ -274,7 +198,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
       <tr>
@@ -300,7 +224,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
       <tr>
@@ -326,7 +250,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill"  data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
       <tr>
@@ -352,7 +276,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
   </td>
    <td>
-  <button class="fill"style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
 
@@ -379,7 +303,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
       <tr>
@@ -405,7 +329,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill" data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
       <tr>
@@ -431,7 +355,7 @@ display:inline-block;
   <button class="fill" data-toggle="modal" data-target="#myModal" >Promote</button>
   </td>
    <td>
-  <button class="fill" style="color:red" data-toggle="modal" data-target="#myModal" >Delete</button>
+  <button class="losefill"  data-toggle="modal" data-target="#myModal" >Delete</button>
   </td>
   </tr>
   </table>
@@ -457,7 +381,7 @@ display:inline-block;
         <div  style="align:center" >
           <button type="button" class="fill " style="font-size:16px;"data-dismiss="modal">Yes</button>
 		  
-          <button type="button" class="fill" style="color:red" style="font-size:16px;" data-dismiss="modal">No</button>
+          <button type="button" class="losefill" style="font-size:16px;" data-dismiss="modal">No</button>
         </div>
         </div>
       </div>
