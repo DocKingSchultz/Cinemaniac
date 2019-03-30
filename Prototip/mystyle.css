@@ -16,7 +16,7 @@
 
 
 .fill {
-	font-size:25px;
+	font-size:20px;
   --color: #A2F6A7;
   --hover: #A2F6A7;
 	width:90%;
@@ -26,7 +26,16 @@
   box-shadow: inset 0 0 0 2em var(--hover);
 }
 
-
+.submit {
+	font-size:20px;
+  --color: #A2F6A7;
+  --hover: #A2F6A7;
+	
+}
+.submit:hover,
+.submit:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
 .signout {
 	font-size:20px;
   --color: #A2F6A7;
@@ -35,8 +44,10 @@
 }
 
 .losefill{
+font-size:20px;	
 --color:#ff0000;
 --hover:#ff0000;
+width:90%;
 }
 
 .losefill:hover,
@@ -90,7 +101,7 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
   text-align: center;
-  
+    color:#000;
   
  
 }
@@ -105,6 +116,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
+
 }
 
 input[type=submit]:hover {
