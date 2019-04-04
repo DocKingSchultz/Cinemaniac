@@ -1,0 +1,34 @@
+MainPage, Register i guest:-
+
+LogIn: promeniti ime iz submit u login
+
+RegularUser: Leaderboard treba da zauzima ceo box i dati malo vise prostora u okviru za svako ime
+
+Vip: -u submit questionu fali dugme za search inserta
+     -takodje modifikovati listu inserta, tako da pise ime       filma pa onda ime inserta u posebnoj koloni.	
+
+Moderator: -namestiti i quest. req. i base da izgledaju slicno kao vip submit question
+	   -ubaciti da u quest. request da moze i da se menja pitanje
+	   -ubaciti search bar i quest. base
+	   -ubaciti ime inserta kao informaciju u i u quest. req. i question base
+
+Admin:-ubaciti da ne moze da se promotuje neko ko je vec moderator, tj onemoguciti dugme promote
+
+game: -promeniti sliku bioskopa (ne uklapa se sa ostatkom projekta)
+
+Question:-namestiti da bude uniformno sa ostatkom projekta, ne slaze se
+
+
+Opste promene:
+-dodati back button svuda gde treba
+-staviti granicu za textboxove, tj specificno pitanja i odgovore
+-ubaciti negde tokom igre prikaz poena
+-umesto welcome treba da pisu neki citati iz filmova
+-dok se ne prikazuje ni jedan prozor u userima, treba da stoji logo, da ne izgleda prazno
+
+	
+
+
+	
+	
+	
