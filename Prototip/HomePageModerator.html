@@ -2,9 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="mystyle.css">
 
 <link rel="stylesheet" type="text/css" href="user.css">
@@ -12,127 +15,213 @@
 
 
 <body>
-
-<p class="welcome">Welcome!</p>
-<button class="fill signout " onclick="window.location.href = 'MainPage.html';" style="width:250px;">Sign Out</button>
-
-<table width="100%" height="100%" cellpadding="5" >
-	<tr>
-		<td width="30%">
-			<div  class="telo">
-				<button class=" fill"onclick="myFunction1()">Question Request</button>
-				<button class=" fill" onclick="myFunction2()">Question Base</button>
-
-			</div>
-		</td>
-		<td>
-			<div id="demo1" class="center"  valign="top" style="display:none" >
+<div class="container">
+<div class="row">
+<div class="col-8">
+<p class="welcome" >Welcome!</p>
+</div>
+<div class="col-4">
+<button class="signout" class="col-4" onclick="window.location.href = 'MainPage.html';" style="width:250px;">Sign Out</button>
+</div>
+</div>
+<div class="row"  style="margin-top:75px;">
+	<div  class="col-4 ">
+	<button class=" fill"onclick="myFunction1()">Question Requests</button>
+	<button class=" fill" onclick="myFunction2()">Question Base</button>
+	</div>
+	<div  class="col-8 ">		
+	<div id="demo1" class="centar"  valign="top" style="display:none" >
 				<div  class="vertical-menu"  >
-					<table align="center" width=100% >
+					<table align="center" width=100% cellspacing="10" cellpadding="10">
 						<tr style="background-color:#f2f2f2;" >
 							<th style="color:#000" >Movie Name</th>
+							<th style="color:#000" >Insert Name</th>
 							<th style="color:#000" >Question</th>
 							
 						</tr>
 						<tr onclick ="myFunction3()" style="cursor: pointer;">
 						
-						<td>Avengers</td><td>Solo Thanos</td>
-						<td><button class="fill">Accept</button></td>
-						<td><button class="losefill">Decline</button></td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td>
+						
 						</tr>
 						<tr onclick ="myFunction3()" style="cursor: pointer;">
-						<td>Avengers</td><td>Solo Thanos</td>
-						<td><button class="fill">Accept</button></td>
-						<td><button class="losefill">Decline</button></td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td>
+						
 						</tr>
 						<tr onclick ="myFunction3()" style="cursor: pointer;">
-						<td>Avengers</td><td>Solo Thanos</td>
-						<td><button class="fill">Accept</button></td>
-						<td><button class="losefill">Decline</button></td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td>
+					
 						</tr>
 						<tr onclick ="myFunction3()" style="cursor: pointer;">
-						<td>Avengers</td><td>Solo Thanos</td>
-						<td><button class="fill">Accept</button></td>
-						<td><button class="losefill" >Decline</button></td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td>
+						
 						</tr>
 						<tr onclick ="myFunction3()" style="cursor: pointer;">
-						<td>Avengers</td><td>Solo Thanos</td>
-						<td><button class="fill">Accept</button></td>
-						<td><button class="losefill" >Decline</button></td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td>
+					
 						</tr>
 					</table>	
 				</div>
-				<div id="demo3"  style="display:none"  >
+				</div>
+				<div id="demo3" class="centar" style="display:none"  >
 						<video autoplay controls >
-							<source src="media/videos/Head.mp4" type="video/mp4">
-							<source src="media/videos/Head.ogg" type="video/ogg"> 
-						</video>
-						<br>
-						<font  color=#A2F6A7 >Q:</font> <label for="Question" value="Enter your question">Question</label><br>
-							<font  color=#A2F6A7 >C.A:</font> <label for="CA" >A1</label><br>
-							<font  color=#A2F6A7 >W.A:</font> <label for="WA" >A2</label><br>
-							<font  color=#A2F6A7 >W.A:</font> <label  for="WA" >A3</label><br>
-							<font  color=#A2F6A7 >W.A:</font> <label  for="WA" >A4</label><br>
+	<source src="media/videos/Head.mp4" type="video/mp4">
+	<source src="media/videos/Head.ogg" type="video/ogg"> 
+	</video><br>
+	<div style="height:200px;overflow-y:auto;">
+	<form action="/action_page.php" >
+	
+	<div class="row">
+	<div class="col-1">
+		<font  color=#A2F6A7 >Q:</font> 
+	</div>	
+	<div class="col-11">
+		<input type="text" name="Question" placeholder="Enter your question"><br>
+	</div>	
+	</div>
+	<div class="row">
+	<div class="col-1">
+		<font  color=#A2F6A7 >C.A:</font> 
+	</div>	
+	<div class="col-11">	
+		<input type="text" name="CA" placeholder="Enter your correct answer"><br>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-1">
+		<font  color=#A2F6A7 >W.A:</font> 
+	</div>	
+	<div class="col-11">	
+		<input type="text" name="WA1" placeholder="Enter your wrong answer"><br>
+	</div>
+
+	</div>
+	<div class="row">	
+		<div class="col-1">
+		<font  color=#A2F6A7 >W.A:</font> 
+	</div>	
+	<div class="col-11">	
+		<input type="text" name="WA2" placeholder="Enter your wrong answer"><br>
+	</div>
+	</div>
+	<div class="row">	
+		<div class="col-1">
+		<font  color=#A2F6A7 >W.A:</font> 
+		</div>	
+	<div class="col-11">	
+		<input type="text" name="WA3" placeholder="Enter your wrong answer"><br>
+	</div>
+	</div>
+	
+	</form>
+		<button class=" fill"  data-toggle="modal" data-target="#myModal" >Accept</button>
+		<button class=" losefill"  data-toggle="modal" data-target="#myModal" >Reject</button>
+	</div>	
 				</div>	
-			</div>
+		
 			
-			<div id="demo2" class="center"  style="display:none">
-				
-				<div  class="vertical-menu" style="height:300px">
-					<table align="center" width=100%>
+			<div id="demo2" class="centar"  style="display:none">
+				<div class="row">
+				<div class="col-10">   
+				<form action="/action_page.php">
+				<input type="text" id="movie" name="movie" placeholder="Enter question for search..">
+				</form>
+			</div>
+			<div class="col-2" >
+		<button type="submit"><i class="fa fa-search"></i></button>
+		</div> 
+		</div>  
+
+				<div  class="vertical-menu" >
+					<table align="center" width=100% cellspacing="10" cellpadding="10">
 						<tr style="background-color:#f2f2f2;" >
 							<th align="center" style="color:#000">Movie Name</th>
+							<th align="center" style="color:#000">Insert Name</th>
 							<th align="center" style="color:#000">Question</th>
 							<th align="center" style="color:#000">Like/Dislike</th>
 						</tr>
 						<tr onclick ="myFunction4()" style="cursor: pointer;">
 						
-						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td><td>150/70</td>
 						
 						</tr>
 						<tr onclick ="myFunction4()" style="cursor: pointer;">
-						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td><td>150/70</td>
 						
 						</tr>
 						<tr onclick ="myFunction4()" style="cursor: pointer;">
-						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td><td>150/70</td>
 						
 						</tr>
 						<tr onclick ="myFunction4()" style="cursor: pointer;">
-						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td><td>150/70</td>
 						
 						</tr>
 						<tr onclick ="myFunction4()" style="cursor: pointer;">
-						<td>Avengers</td><td>Solo Thanos</td><td>150/70</td>
+						<td>Avengers</td><td>Insert1</td><td>Solo Thanos</td><td>150/70</td>
 						
 						</tr>
 					</table>
 				</div>	
-					<div id="demo4"  style="display:none" >
-						<video autoplay controls  >
-							<source src="media/videos/Head.mp4" type="video/mp4">
-							<source src="media/videos/Head.ogg" type="video/ogg"> 
-						</video>
-						<br>
-						<form action="/action_page.php">
-						
-							<font  color=#A2F6A7 >&nbsp&nbsp Q:</font> <input type="text" id="Question" name="Question"value="Question"><br>
-							<font  color=#A2F6A7 >C.A:</font> <input type="text" id="CA" name="CA" value="Answer1"><br>
-							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="WA1" name="WA1" value="Answer2"><br>
-							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="WA2" name="WA2" value="Answer3"><br>
-							<font  color=#A2F6A7 >W.A:</font> <input type="text" id="WA3" name="WA3" value="Answer4"><br>
-							
-						</form>
-						<button class="submit"  data-toggle="modal" data-target="#myModal" >Edit</button>	
-						<button class="submit"  data-toggle="modal" data-target="#myModal" >Delete</button>					
-					</div>
+			</div>	
+<div id="demo4" class="centar"  style="display:none" >
+	<video autoplay controls >
+	<source src="media/videos/Head.mp4" type="video/mp4">
+	<source src="media/videos/Head.ogg" type="video/ogg"> 
+	</video><br>
+	<div style="height:200px;overflow-y:auto;">
+	<form action="/action_page.php" >
+	
+	<div class="row">
+	<div class="col-1">
+		<font  color=#A2F6A7 >Q:</font> 
+	</div>	
+	<div class="col-11">
+		<input type="text" name="Question" placeholder="Enter your question"><br>
+	</div>	
+	</div>
+	<div class="row">
+	<div class="col-1">
+		<font  color=#A2F6A7 >C.A:</font> 
+	</div>	
+	<div class="col-11">	
+		<input type="text" name="CA" placeholder="Enter your correct answer"><br>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-1">
+		<font  color=#A2F6A7 >W.A:</font> 
+	</div>	
+	<div class="col-11">	
+		<input type="text" name="WA1" placeholder="Enter your wrong answer"><br>
+	</div>
 
-		</td>
-	</tr>
+	</div>
+	<div class="row">	
+		<div class="col-1">
+		<font  color=#A2F6A7 >W.A:</font> 
+	</div>	
+	<div class="col-11">	
+		<input type="text" name="WA2" placeholder="Enter your wrong answer"><br>
+	</div>
+	</div>
+	<div class="row">	
+		<div class="col-1">
+		<font  color=#A2F6A7 >W.A:</font> 
+		</div>	
+	<div class="col-11">	
+		<input type="text" name="WA3" placeholder="Enter your wrong answer"><br>
+	</div>
+	</div>
+	
+	</form>
+		<button class=" submit"  data-toggle="modal" data-target="#myModal" >Edit</button>
+		<button class=" submit"  data-toggle="modal" data-target="#myModal" >Delete</button>
+	</div>				
+</div>
 
-</table>
-
-<div class="container">
+	</div>
+</div>
   
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -153,7 +242,7 @@
       </div>
       
     </div>
-  </div>
+</div>
 <script>
 function myFunction1() {
   document.getElementById('demo1').style.display = "block";	
@@ -171,11 +260,11 @@ function myFunction2() {
 function myFunction3() {
   document.getElementById('demo2').style.display = "none";	
   document.getElementById('demo3').style.display = "block";
-  document.getElementById('demo1').style.display = "block";
+  document.getElementById('demo1').style.display = "none";
    document.getElementById('demo4').style.display = "none"; 
 }
 function myFunction4() {
-  document.getElementById('demo2').style.display = "block";	
+  document.getElementById('demo2').style.display = "none";	
   document.getElementById('demo3').style.display = "none";
   document.getElementById('demo1').style.display = "none";
    document.getElementById('demo4').style.display = "block"; 
