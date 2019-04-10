@@ -6,10 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="robots" content="noindex, noarchive">
 <meta name="format-detection" content="telephone=no">
- 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 
 <link rel="stylesheet" type="text/css" href="user.css">
@@ -18,24 +20,30 @@
 
 
 <body>
-<table width="100%">
-<tr>
-<td>
-<p class="welcome">Welcome!</p>
-<button class="fill signout" onclick="window.location.href = 'MainPage.html';" style="width:250px;">Sign Out</button>
-</td>
-</tr>
+<div class="container">
+<div class="row">
+<div class="col-8">
+<p class="welcome" >Welcome!</p>
+</div>
+<div class="col-4">
+<button class="signout" class="col-4" onclick="window.location.href = 'MainPage.html';" style="width:250px;">Sign Out</button>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div id="demo1" class="centar" >
+<div class="row">
+				<div class="col-10">   
+				<form action="/action_page.php">
+				<input type="text" id="movie" name="movie" placeholder="Enter username for search..">
+				</form>
+			</div>
+			<div class="col-2" >
+		<button type="submit "><i class="fa fa-search" ></i></button>
+		</div> 
+		</div> 
 
-<tr>
-<td>
-<div id="demo1" class="center" >
-<form action="/action_page.php">
-    <label for="username" >Username</label>
-    <input type="text" id="username" name="username" placeholder="Enter username for search..">
-	
-  </form>
-	<button  class="fill" >Search</button>
-	<div  class="vertical-menu" >
+<div  class="vertical-menu" style="overflow-x:hidden;" >
   <table align="center" style="width:100%">
   <tr style="background-color:#f2f2f2;" >
     <th align="center" style="color:black">Username</th>
@@ -65,7 +73,7 @@
   true
   </td>
   <td>
-  <button class="fill" data-toggle="modal" data-target="#myModal">Promote</button>
+  <button class="fill" data-toggle="modal" data-target="#myModal" disabled>Promote</button>
   </td>
   <td>
   <button class="losefill" data-toggle="modal" data-target="#myModal">Delete</button>
@@ -363,11 +371,8 @@
   
 </div>
 </div>
-</td>
-</tr>
-</table>
-<div class="container">
-  
+</div>
+ </div> 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
