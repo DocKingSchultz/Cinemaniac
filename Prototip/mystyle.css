@@ -14,7 +14,16 @@
   box-shadow: inset 0 0 0 2em var(--hover);
 }
 
+button:disabled {
+	font-size:20px;
+  --color: #ccc;
+  --hover: #ccc;
+}
 
+button:disabled:hover
+button:disabled:focus {
+    box-shadow: inset 0 0 0 2em var(--hover);
+}
 .fill {
 	font-size:20px;
   --color: #A2F6A7;
@@ -82,8 +91,7 @@ button {
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
-  
-
+  cursor:pointer;
  
 }
 
@@ -121,7 +129,7 @@ input[type=password], select {
  
 }
 input[type=submit] {
-  width: 60%;
+  
   background-color: #A2F6A7;
   color: white;
   padding: 14px 20px;
