@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+ <link rel="stylesheet" type="text/css" href="user.css">
 <style>
 body{
 font-family:'Leftovers';
@@ -28,13 +37,13 @@ text-align:center;
   background-color: #ddd;
   border: none;
   color: black;
- 
+
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  
   margin: 4px 2px;
   cursor: pointer;
-  width:530px;
+ width:100%;
   height:150px;
   border-radius: 16px;
  
@@ -47,28 +56,39 @@ text-align:center;
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 <body>
-<div class="ffont" text-align="center"><h1>Who killed Thanos ?<h1></div>
-<br>
-<br>
-<div class="groove">
-	
-<button class="button"><font size="5px">Cetrdesetznakova Cetrdesetznakova  Cetrdese</font></button>
-<button class="button"><font size="5px">Thanos himself</font></button>
-<br>
-
-<button class="button"><font size="5px">Falcon</font></button>
-<button class="button"><font size="5px">Vision</font></button>
+<div class="container">
+<div class="row" style="margin-top:10px;">
+<div class="col">
+<div class="ffont" style="text-align:center"><h1>Who killed Thanos?<h1></div>
+</div></div>
+<div class="row" style="margin-top:50px;">
+<div class="col-6">
+<button class="button"><font size="5px">Cetrdesetznakova Cetrdesetznakova  Cetrsfasf</font></button>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="col-6">
+<button class="button"><font size="5px">Thanos</font></button>
+</div>
+</div>
+
+<div class="row">
+
+<div class="col-6">
+<button class="button"><font size="5px">Thor</font></button>
+</div>
+<div class="col-6">
+<button class="button"><font size="5px">He didn't die</font></button>
+</div>
+</div>
 
 
-<i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size:30px" style="float:left">Like Question	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;</i>
-	
-<i onclick="myFunction(this)" class="fa fa-thumbs-down" style="font-size:30px" style="float:right">Dislike Question</i>
 
+<div class="row" style="margin-top:50px;">
+<div class="col">
+<i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size:30px" style="float:right">Like Question</i>
+</div>
+<div class="col">
+<i onclick="myFunction(this)" class="fa fa-thumbs-down" style="font-size:30px" style="float:left">Dislike Question</i>
+</div>
+</div>
 </body>
 </html>
