@@ -39,8 +39,11 @@
     margin-right: 0;
     margin-left: 0;
 	max-width:100%;
+	min-width:100%;
 }
-
+html {
+  overflow-y: scroll;
+}
 .signout{
 float:right;
 margin-top:25px;
