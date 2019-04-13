@@ -4,51 +4,56 @@
 
 <link rel="stylesheet" type="text/css" href="centarReg.css">
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-<div class="centerReg" style="margin-top:5%;margin-bottom:5%;">
+<div >
+<button   onclick="window.location.href = 'Login.html';" ><i class="fas fa-arrow-left"></i></button>
+</div>
+<div class="centerReg" style="margin-top:10%;margin-bottom:5%;">
 <table>
   <form action="/action_page.php">
 	<tr><td>
     <label for="name">Name</label>
     </tr></td>
 	<tr><td>
-	<input type="text" id="name" name="name" placeholder="Enter your first name.." >
+	<input type="text" id="name" name="name" placeholder="Enter your first name.." maxlength="15" >
 	 </tr></td>
 	<tr><td>
     <label for="lastname">Lastname</label>
 	 </tr></td>
 	<tr><td>
-    <input  type="text" id="lastname" name="lastname" placeholder="Enter your last name..">
+    <input  type="text" id="lastname" name="lastname" placeholder="Enter your last name.." maxlength="15">
 	 </tr></td>
 	<tr><td>
 	<label for="username">Username</label>
 	 </tr></td>
 	<tr><td>
-    <input type="text" id="username" name="username" placeholder="Enter your username..">
+    <input type="text" id="username" name="username" placeholder="Enter your username.." maxlength="8">
 	</tr></td>
 	<tr><td>
     <label for="Password">Password</label>
      </tr></td>
 	<tr><td>
-	<input  type="password" id="Password" name="Password" placeholder="Enter your password..">
+	<input  type="password" id="Password" name="Password" placeholder="Enter your password.." maxlength="8">
 	 </tr></td>
 	<tr><td>
 	<label for="ConfirmPassword">Confirm Password</label>
      </tr></td>
 	<tr><td>
-	<input  type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Enter your password..">
+	<input  type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Enter your password.."maxlength="8">
 	 </tr></td>
 	<tr><td>
 	<label for="Email">Email</label>
 	 </tr></td>
 	<tr><td>
-    <input  type="text" id="Email" name="Email" placeholder="Enter your Email..">
+    <input  type="text" id="Email" name="Email" placeholder="Enter your Email.."maxlength="20">
 	</tr></td>
 	<tr><td>
   </form>
 	<button class=" fill"  onclick="window.location.href = 'LogIn.html';" >Submit</button>
 </table>	
 </div>
+
 </body>
 </html>
