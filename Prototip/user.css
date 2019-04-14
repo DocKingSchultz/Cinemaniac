@@ -18,7 +18,7 @@
   float:left;
 }
 .centar{
-  border: 3px solid #A2F6A7; 
+  border: 3px solid #FFDF00; 
   margin: 0;
  text-align: center;
 
@@ -32,6 +32,7 @@
  font-size:20px;
  
 }
+
  .container {
 	height: auto;
    padding-right: 0; 
@@ -93,10 +94,10 @@ cursor:default;
 
 
 .red {
-	color:#A2F6A7;
+	color:#FFDF00;
 	
 
-	border: 2px solid #A2F6A7;
+	border: 2px solid #FFDF00;
 	margin-bottom:30px;
 	
 }
@@ -147,7 +148,7 @@ margin-top:10px;
 .vertical-menu1 button {
 	width:95%;
 	float:right;
-	background-color: #A2F6A7;
+	background-color: #FFDF00;
 	color: black;
 	display: block;
 	padding: 12px;

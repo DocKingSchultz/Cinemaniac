@@ -26,8 +26,8 @@ button:disabled:focus {
 }
 .fill {
 	font-size:20px;
-  --color: #A2F6A7;
-  --hover: #A2F6A7;
+  --color: #FFDF00;
+  --hover: #FFDF00;
 	width:90%;
 }
 .signout:hover,
@@ -37,8 +37,8 @@ button:disabled:focus {
 
 .submit {
 	font-size:20px;
-  --color: #A2F6A7;
-  --hover: #A2F6A7;
+  --color: #FFDF00;
+  --hover: #FFDF00;
 	
 }
 .submit:hover,
@@ -47,8 +47,8 @@ button:disabled:focus {
 }
 .signout {
 	font-size:20px;
-  --color: #A2F6A7;
-  --hover: #A2F6A7;
+  --color: #FFDF00;
+  --hover: #FFDF00;
 
 }
 
@@ -130,7 +130,7 @@ input[type=password], select {
 }
 input[type=submit] {
   
-  background-color: #A2F6A7;
+  background-color: #FFDF00;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;

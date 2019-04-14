@@ -31,21 +31,30 @@ font-size:30px;
 text-align:center;
 }
 .button {
-  background-color: #ddd;
+	background:none;
+	border: 2px solid;
+	text-align: center;
+	text-decoration: none;  
+	margin: 4px 2px;
+	cursor: pointer;
+	width:450px;
+	height:150px;
+	font-size:20px;
+  --color: #FFDF00;
+  --hover: #FFDF00;
  
-  color: black;
-  text-align: center;
-  text-decoration: none;  
-  margin: 4px 2px;
-  cursor: pointer;
- width:450px;
-  height:150px;
-  border-radius: 16px;
- 
+}
+.signout {
+	font-size:20px;
+  --color: #FFDF00;
+  --hover: #FFDF00;
+
 }
 .button:hover {
-  background-color: #f1f1f1;
+  background-color: #FFDF00;
 }
+
+
 
 
 </style>
@@ -53,26 +62,26 @@ text-align:center;
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 <body>
 <div class="container">
-<div class="row" style="margin-top:10px;">
+<div class="row" style="margin-top:50px;">
 <div class="col">
-<div class="ffont" style="text-align:center"><h1>Who killed Thanos?<h1></div>
+<div class="ffont" style="text-align:center"><h1><font color=#FFDF00>What did Thanos say to Thor?</font><h1></div>
 </div></div>
 <div class="row" style="margin-top:50px;">
 <div class="col-6">
-<button id="a0" class="button" style="float:right" onclick="f('a0')"><font size="5px">Cetrdesetznakova Cetrdesetznakova  Cetrsfasf</font></button>
+<button id="a0" class="button" style="float:right" onclick="f('a0')"><font size="8px" style="font-family:'Leftovers'">Subscribe to Pewdiepie!</font></button>
 </div>
 <div class="col-6">
-<button id="a1" class="button" style="float:left" onclick="f('a1')"><font size="5px">Thanos</font></button>
+<button id="a1" class="button" style="float:left" onclick="f('a1')"><font size="8px" style="font-family:'Leftovers'">Aaaaah that's hot, that's hot!</font></button>
 </div>
 </div>
 
-<div class="row" style="margin-top:30px;">
+<div class="row" style="margin-top:50px;">
 
 <div class="col-6">
-<button id="a2" class="button" style="float:right" onclick="f('a2')"><font size="5px">Thor</font></button>
+<button id="a2" class="button" style="float:right" onclick="f('a2')"><font size="8px" style="font-family:'Leftovers'">I did not hit her, I did naaaawt!</font></button>
 </div>
 <div class="col-6">
-<button id="a3" class="button" style="float:left" onclick="f('a3')"><font size="5px">He didn't die</font></button>
+<button id="a3" class="button" style="float:left" onclick="f('a3')"><font size="8px" style="font-family:'Leftovers'">You should have gone for the head.</font></button>
 </div>
 </div>
 
@@ -82,7 +91,7 @@ text-align:center;
 <i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size:30px" style="float:right"><div style="font-family:'Galindo'">Like Question</div></i>
 </div>
 <div class="col">
-<i onclick="myFunction(this)" class="fa fa-thumbs-down" style="font-size:30px" style="float:left"><div style="font-family:'Galindo'">Dislike Question</div></i>
+<i onclick="myFunction(this)" class="fa fa-thumbs-down" style="font-size:30px" style="float:left" color=#FFDF00><div style="font-family:'Galindo'">Dislike Question</div></i>
 </div>
 </div>
 <div id="countdown"></div>
@@ -90,7 +99,7 @@ text-align:center;
 var x=1;
 function f(str) {
 if(x==1){
-  document.getElementById(str).style.borderColor = "green";
+  document.getElementById(str).style.borderColor = "";
    document.getElementById(str).style.borderWidth = "5px";
   x=2;
   }

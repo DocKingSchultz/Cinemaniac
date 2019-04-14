@@ -1,7 +1,7 @@
 .centerReg {
 	border: 3px;
 	border-style: solid;
-	border-color:#A2F6A7;
+	border-color:#FFDF00;
 	background-color:#070707;
 
 	position: absolute;
@@ -9,10 +9,10 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	font-color:#A2F6A7;
+	font-color:#FFDF00;
 	
 	font-size:30px;
-	color:#A2F6A7;
+	color:#FFDF00;
 }
 
 centerReg.label{
