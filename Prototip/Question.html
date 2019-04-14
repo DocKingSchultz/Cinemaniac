@@ -32,7 +32,7 @@ text-align:center;
 }
 .button {
   background-color: #ddd;
-  border: none;
+ 
   color: black;
   text-align: center;
   text-decoration: none;  
@@ -47,6 +47,7 @@ text-align:center;
   background-color: #f1f1f1;
 }
 
+
 </style>
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -58,20 +59,20 @@ text-align:center;
 </div></div>
 <div class="row" style="margin-top:50px;">
 <div class="col-6">
-<button class="button" style="float:right" ><font size="5px">Cetrdesetznakova Cetrdesetznakova  Cetrsfasf</font></button>
+<button id="a0" class="button" style="float:right" onclick="f('a0')"><font size="5px">Cetrdesetznakova Cetrdesetznakova  Cetrsfasf</font></button>
 </div>
 <div class="col-6">
-<button class="button" style="float:left"><font size="5px">Thanos</font></button>
+<button id="a1" class="button" style="float:left" onclick="f('a1')"><font size="5px">Thanos</font></button>
 </div>
 </div>
 
 <div class="row" style="margin-top:30px;">
 
 <div class="col-6">
-<button class="button" style="float:right"><font size="5px">Thor</font></button>
+<button id="a2" class="button" style="float:right" onclick="f('a2')"><font size="5px">Thor</font></button>
 </div>
 <div class="col-6">
-<button class="button" style="float:left"><font size="5px">He didn't die</font></button>
+<button id="a3" class="button" style="float:left" onclick="f('a3')"><font size="5px">He didn't die</font></button>
 </div>
 </div>
 
@@ -84,5 +85,16 @@ text-align:center;
 <i onclick="myFunction(this)" class="fa fa-thumbs-down" style="font-size:30px" style="float:left"><div style="font-family:'Galindo'">Dislike Question</div></i>
 </div>
 </div>
+
+<script>
+var x=1;
+function f(str) {
+if(x==1){
+  document.getElementById(str).style.borderColor = "green";
+   document.getElementById(str).style.borderWidth = "5px";
+  x=2;
+  }
+}
+</script>
 </body>
 </html>
