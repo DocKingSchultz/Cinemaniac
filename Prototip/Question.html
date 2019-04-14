@@ -85,7 +85,7 @@ text-align:center;
 <i onclick="myFunction(this)" class="fa fa-thumbs-down" style="font-size:30px" style="float:left"><div style="font-family:'Galindo'">Dislike Question</div></i>
 </div>
 </div>
-
+<div id="countdown"></div>
 <script>
 var x=1;
 function f(str) {
@@ -95,6 +95,19 @@ if(x==1){
   x=2;
   }
 }
+var timeleft = 15;
+document.getElementById("countdown").style.fontSize = "50px";
+var downloadTimer = setInterval(function(){
+  if(timeleft<=10)
+  document.getElementById("countdown").innerHTML = timeleft;
+  timeleft -= 1;
+  if(timeleft==4) {document.getElementById("countdown").style.color="red";
+  document.getElementById("countdown").style.fontSize = "60px";
+  }
+  if(timeleft <= 0){
+    window.location.href = 'game.html';
+  }
+}, 1000);
 </script>
 </body>
 </html>
