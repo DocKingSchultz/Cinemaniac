@@ -69,6 +69,12 @@ text-align:center;
   background-color: #999;
 cursor:default;
 }
+.win{
+ background-color: #A2F6A7;
+}
+.lose{
+ background-color: #F16464;
+}
 .vertical-menu p {
   
   color: black;
@@ -76,19 +82,15 @@ cursor:default;
   padding: 12px;
   text-decoration: none;
    border:1px solid black;
-
+ 
 }
 
 .vertical-menu p:hover {
   background-color: #999;
+  cursor:default;
 }
 
-.win{
- background-color: #A2F6A7;
-}
-.lose{
- background-color: #F16464;
-}
+
 
 .red {
 	color:#A2F6A7;
