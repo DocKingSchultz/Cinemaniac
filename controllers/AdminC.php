@@ -46,4 +46,10 @@ class AdminC extends CI_Controller {
     public function index() {
         $this->prikazi('HomePageAdmin.php');
     }
+    
+    public function logout() {
+        $this->session->unset('korisnik');
+        $this->session->sess_destroy();
+        redirect('Gost');
+    }
 }
