@@ -35,9 +35,10 @@ class Gost extends CI_Controller {
             if($this->Igrac->proveriIgraca($korisnik->Username)) {
                 redirect('IgracC');
             }
-            else {
+            
+            if($this->Vip->proveriVipa($korisnik->Username)) {
                 redirect('VipC');
-            }        
+            }
         }
     }
     
@@ -73,7 +74,8 @@ class Gost extends CI_Controller {
                     if($this->Igrac->proveriIgraca($username)) {
                         redirect('IgracC');
                     }
-                    else {
+                    
+                    if($this->Vip->proveriVipa($korisnik->Username)) {
                         redirect('VipC');
                     }
                 }
