@@ -21,33 +21,31 @@ ADD CONSTRAINT XPKBiloU PRIMARY KEY (IdPartija,IdPitanje);
 
 CREATE TABLE Citat
 (
-	IdCitat              INTEGER NOT NULL,
+	IdCitat              INTEGER NOT NULL AUTO_INCREMENT,
 	Tekst                VARCHAR(50) NOT NULL,
-	Autor                VARCHAR(50) NULL
+	Autor                VARCHAR(50) NULL,
+	PRIMARY KEY (IdCitat)
 );
 
-ALTER TABLE Citat
-ADD CONSTRAINT XPKCitat PRIMARY KEY (IdCitat);
 
 CREATE TABLE Film
 (
-	IdFilm               INTEGER NOT NULL,
-	Naziv                VARCHAR(20) NULL
+	IdFilm               INTEGER NOT NULL AUTO_INCREMENT,
+	Naziv                VARCHAR(20) NULL,
+	PRIMARY KEY (IdFilm)
 );
 
-ALTER TABLE Film
-ADD CONSTRAINT XPKFilm PRIMARY KEY (IdFilm);
 
 CREATE TABLE Gost
 (
-	IdGost               INTEGER NOT NULL,
+	IdGost               INTEGER NOT NULL AUTO_INCREMENT,
 	Ime                  VARCHAR(8) NULL,
 	IdPartija            INTEGER NOT NULL,
-	BrojPoena            INTEGER NULL
+	BrojPoena            INTEGER NULL,
+	PRIMARY KEY (IdGost)
 );
 
-ALTER TABLE Gost
-ADD CONSTRAINT XPKGost PRIMARY KEY (IdGost);
+
 
 CREATE TABLE Igrac
 (
@@ -99,55 +97,54 @@ ADD CONSTRAINT XPKNetacanOdgovorNa PRIMARY KEY (IdPitanje,IdOdgovor);
 
 CREATE TABLE Odgovor
 (
-	IdOdgovor            INTEGER NOT NULL,
-	Tekst                VARCHAR(40) NOT NULL
+	IdOdgovor            INTEGER NOT NULL AUTO_INCREMENT,
+	Tekst                VARCHAR(40) NOT NULL,
+	PRIMARY KEY (IdOdgovor)
 );
 
-ALTER TABLE Odgovor
-ADD CONSTRAINT XPKOdgovor PRIMARY KEY (IdOdgovor);
 
 CREATE TABLE Partija
 (
-	IdPartija            INTEGER NOT NULL,
-	Datum                DATE NOT NULL
+	IdPartija            INTEGER NOT NULL AUTO_INCREMENT,
+	Datum                DATE NOT NULL,
+	PRIMARY KEY (IdPartija)
 );
 
-ALTER TABLE Partija
-ADD CONSTRAINT XPKPartija PRIMARY KEY (IdPartija);
+
 
 CREATE TABLE Pitanje
 (
-	IdPitanje            INTEGER NOT NULL,
+	IdPitanje            INTEGER NOT NULL AUTO_INCREMENT,
 	Likes                INTEGER NOT NULL,
 	Dislikes             INTEGER NOT NULL,
 	Tekst                VARCHAR(45) NOT NULL,
 	IdTacan              INTEGER NOT NULL,
 	IdScena              INTEGER NOT NULL,
-	Odobreno             VARCHAR(20) NULL CHECK ( Odobreno IN ('JESTE', 'NIJE') )
+	Odobreno             VARCHAR(20) NULL CHECK ( Odobreno IN ('JESTE', 'NIJE') ),
+	PRIMARY KEY (IdPitanje)
+	
 );
 
-ALTER TABLE Pitanje
-ADD CONSTRAINT XPKPitanje PRIMARY KEY (IdPitanje);
 
 CREATE TABLE Scena
 (
-	IdScena              INTEGER NOT NULL,
+	IdScena              INTEGER NOT NULL AUTO_INCREMENT,
 	Naziv                VARCHAR(20) NULL,
-	IdFilm               INTEGER NOT NULL
+	IdFilm               INTEGER NOT NULL,
+	PRIMARY KEY (IdScena)
 );
 
-ALTER TABLE Scena
-ADD CONSTRAINT XPKScena PRIMARY KEY (IdScena);
+
 
 CREATE TABLE Trivia
 (
-	IdTrivia             INTEGER NOT NULL,
+	IdTrivia             INTEGER NOT NULL AUTO_INCREMENT,
 	Tekst                VARCHAR(50) NOT NULL,
-	IdFilm               INTEGER NOT NULL
+	IdFilm               INTEGER NOT NULL,
+	PRIMARY KEY (IdTrivia)
 );
 
-ALTER TABLE Trivia
-ADD CONSTRAINT XPKTrivia PRIMARY KEY (IdTrivia);
+
 
 CREATE TABLE Vip
 (
